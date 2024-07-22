@@ -4,15 +4,19 @@
         <title>FediShare</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="index.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <link href="index.css" rel="stylesheet"/>
     </head>
     <noscript> Please turn on JavaScript </noscript>
     <body>
-        <h1>Fedishare</h1>
-        <textarea class="form-control" id="sendText" rows="3"></textarea>
-        <button onclick="send()" class="btn btn-primary">Publish</button>
+        <h1 id="title">Fedishare</h1>
+        <input type="text" class="form-control" id="titleText" placeholder="FediverseとXの違い" />
+        <textarea class="form-control" id="sendText" rows="3" placeholder="主な違いは・・・"></textarea>
+        <button onclick="send()" class="btn btn-primary" id="btner">Publish</button>
+        <hr>
+        <h2>なにこれ</h2>
+        <p>Fediverseの分散化SNS/Nostrリレーにシェアするためのツールです</p>
     </body>
+    <script src="index.js"></script>
 </html>
